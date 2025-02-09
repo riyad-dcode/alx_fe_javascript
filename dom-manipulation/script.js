@@ -22,6 +22,7 @@ function createAddQuoteForm() {
 
         document.getElementById('quote-text').value = '';
         document.getElementById('quote-category-input').value = '';
+        showRandomQuote();
     });
 }
 
