@@ -4,7 +4,7 @@ let quotes = [
     { text: "The purpose of our lives is to be happy.", category: "Happiness" }
 ];
 
-function showRandomQuote() {
+function displayRandomQuote() {
     const randomIndex = Math.floor(Math.random() * quotes.length);
     const quote = quotes[randomIndex];
     document.getElementById('quote-display').innerText = quote.text;
