@@ -3,23 +3,25 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Quote Generator</title>
-    <link rel="stylesheet" href="styles.css">
+    <title>Random Quote Generator</title>
 </head>
 <body>
     <div id="quote-container">
-        <h1>Random Quote Generator</h1>
-        <button id="new-quote">Show New Quote</button>
+        <h1>Random Quote</h1>
+        <button id="show-quote-btn">Show New Quote</button>
     </div>
-    
+
     <div id="add-quote-container">
         <h2>Add a New Quote</h2>
         <form id="quote-form">
-            <input type="text" id="quote-text" placeholder="Enter quote text" required>
-            <input type="text" id="quote-category-input" placeholder="Enter category" required>
+            <input type="text" id="quote-text-input" placeholder="Quote text" required>
+            <input type="text" id="quote-category-input" placeholder="Category" required>
             <button type="submit">Add Quote</button>
         </form>
     </div>
+
+    <button id="export-btn">Export Quotes to JSON</button>
+    <input type="file" id="import-file" accept=".json">
 
     <script src="script.js"></script>
 </body>
