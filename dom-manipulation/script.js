@@ -25,6 +25,6 @@ function createAddQuoteForm() {
     });
 }
 
-document.getElementById('new-quote').addEventListener('click', showRandomQuote);
+document.getElementById('new-quote').addEventListener('click', displayRandomQuote);
 
 createAddQuoteForm();
