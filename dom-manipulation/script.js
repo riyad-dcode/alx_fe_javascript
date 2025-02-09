@@ -4,7 +4,7 @@ let quotes = [
     { text: "The purpose of our lives is to be happy.", category: "Happiness" }
 ];
 
-function displayRandomQuote() {
+function showRandomQuote() {
     const randomIndex = Math.floor(Math.random() * quotes.length);
     const quote = quotes[randomIndex];
     document.getElementById('quote-display').innerText = quote.text;
@@ -25,6 +25,6 @@ function createAddQuoteForm() {
     });
 }
 
-document.getElementById('new-quote').addEventListener('click', displayRandomQuote);
+document.getElementById('new-quote-btn').addEventListener('click', showRandomQuote);
 
 createAddQuoteForm();
