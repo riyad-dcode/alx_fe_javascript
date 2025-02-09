@@ -7,8 +7,8 @@ let quotes = [
 function showRandomQuote() {
     const randomIndex = Math.floor(Math.random() * quotes.length);
     const quote = quotes[randomIndex];
-    document.getElementById('quote-display').innerText = quote.text;
-    document.getElementById('quote-category').innerText = `Category: ${quote.category}`;
+    document.getElementById('quote-display').innerHTML = quote.text;
+    document.getElementById('quote-category').innerHTML = `Category: ${quote.category}`;
 }
 
 function createAddQuoteForm() {
